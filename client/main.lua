@@ -249,8 +249,8 @@ function OpenPoliceActionsMenu()
 				{label = _U('search'), value = 'search'},
 				{label = _U('handcuff'), value = 'handcuff'},
 				{label = _U('drag'), value = 'drag'},
-				{label = _U('put_in_vehicle'), value = 'put_in_vehicle'},
-				{label = _U('out_the_vehicle'), value = 'out_the_vehicle'},
+			--	{label = _U('put_in_vehicle'), value = 'put_in_vehicle'},
+			--	{label = _U('out_the_vehicle'), value = 'out_the_vehicle'},
 				--{label = _U('fine'), value = 'fine'},
 				--{label = _U('unaid_bills'), value = 'unpaid_bills'},
 				--{label = "Community Service",	value = 'communityservice'}
