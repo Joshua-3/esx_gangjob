@@ -1,5 +1,3 @@
-USE `fivem`;
-
 INSERT INTO `addon_account` (name, label, shared) VALUES
 	('society_gang', 'Gang', 1)
 ;
