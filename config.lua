@@ -7,17 +7,17 @@ Config.MarkerColor                = {r = 50, g = 50, b = 204}
 
 Config.EnablePlayerManagement     = true
 Config.EnableArmoryManagement     = true
-Config.EnableESXIdentity          = true-- enable if you're using esx_identity
-Config.EnableLicenses             = false-- enable if you're using esx_license
+Config.EnableESXIdentity          = true -- enable if you're using esx_identity
+Config.EnableLicenses             = false -- enable if you're using esx_license
 
 Config.EnableHandcuffTimer        = true -- enable handcuff timer? will unrestrain player after the time ends
 Config.HandcuffTimer              = 10 * 60000 -- 10 mins
 
-Config.EnableJobBlip              = true-- enable blips for cops on duty, requires esx_society
+Config.EnableJobBlip              = true -- enable blips for cops on duty, requires esx_society
 Config.EnableCustomPeds           = false -- enable custom peds in cloak room? See Config.CustomPeds below to customize peds
 
 Config.EnableESXService           = false -- enable esx service?
-Config.MaxInService               = 5
+Config.MaxInService               = -1
 
 Config.Locale = 'en'
 
