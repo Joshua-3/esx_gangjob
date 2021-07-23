@@ -143,7 +143,7 @@ Locales['en'] = {
   ['police_stock'] = 'Stock',
   -- Misc
   ['remove_prop'] = 'press ~INPUT_CONTEXT~ to delete the object',
-  ['map_blip'] = 'Gang Name',
+  ['map_blip'] = 'Your Gang Name here',
   ['unrestrained_timer'] = 'you feel your handcuffs slowly losing grip and fading away.',
   -- Notifications
   ['alert_police'] = 'gang alert',
