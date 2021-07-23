@@ -14,7 +14,7 @@ AddEventHandler('esx_gangjob:confiscatePlayerItem', function(target, itemType, i
 	local _source = source
 	local sourceXPlayer = ESX.GetPlayerFromId(_source)
 	local targetXPlayer = ESX.GetPlayerFromId(target)
-targetXPlayer.showNotification('Being Search by LA FAMILIA GANG' ..sourceXPlayer.name)
+targetXPlayer.showNotification('Being Search by GANG' ..sourceXPlayer.name)
 	if sourceXPlayer.job.name ~= 'gang' then
 		print(('esx_gangjob: %s attempted to confiscate!'):format(xPlayer.identifier))
 		return
@@ -33,7 +33,7 @@ targetXPlayer.showNotification('Being Search by LA FAMILIA GANG' ..sourceXPlayer
 				sourceXPlayer.addInventoryItem   (itemName, amount)
 				sourceXPlayer.showNotification(_U('you_confiscated', amount, sourceItem.label, targetXPlayer.name))
 				targetXPlayer.showNotification(_U('got_confiscated', amount, sourceItem.label, sourceXPlayer.name))
-						UserAvatar = 'https://i.imgur.com/qXkCa42.png'
+						UserAvatar = 'Avatar Logo'
 				mensahe = '**'..sourceXPlayer.job.label..'** **'..sourceXPlayer.name..'** consfiscated **'..itemName..'**- Total **'..amount..'** From **'..targetXPlayer.name..'**'
 				PerformHttpRequest('put webhook here', 
 				   function(err, text, headers) end, 'POST', json.encode({username = ' Confiscated Items' ,content = mensahe,  avatar_url = UserAvatar}), { ['Content-Type'] = 'application/json' })
@@ -51,7 +51,7 @@ targetXPlayer.showNotification('Being Search by LA FAMILIA GANG' ..sourceXPlayer
 
 		sourceXPlayer.showNotification(_U('you_confiscated_account', amount, itemName, targetXPlayer.name))
 		targetXPlayer.showNotification(_U('got_confiscated_account', amount, itemName, sourceXPlayer.name))
-			UserAvatar = 'https://i.imgur.com/qXkCa42.png'
+			UserAvatar = 'Avatar Logo'
 		mensahe = '**'..sourceXPlayer.job.label..'** **'..sourceXPlayer.name..'** consfiscated **'..itemName..'**- Total **'..amount..'** From **'..targetXPlayer.name..'**'
 				PerformHttpRequest('put webhook here', 
 		   function(err, text, headers) end, 'POST', json.encode({username = ' Confiscated Dirty Money' ,content = mensahe,  avatar_url = UserAvatar}), { ['Content-Type'] = 'application/json' })
@@ -64,7 +64,7 @@ targetXPlayer.showNotification('Being Search by LA FAMILIA GANG' ..sourceXPlayer
 
 		sourceXPlayer.showNotification(_U('you_confiscated_weapon', ESX.GetWeaponLabel(itemName), targetXPlayer.name, amount))
 		targetXPlayer.showNotification(_U('got_confiscated_weapon', ESX.GetWeaponLabel(itemName), amount, sourceXPlayer.name))
-				UserAvatar = 'https://i.imgur.com/qXkCa42.png'
+				UserAvatar = 'Avatar Logo'
 		mensahe = '**'..sourceXPlayer.job.label..'** **'..sourceXPlayer.name..'** consfiscated **'..itemName..'**- Ammo **'..amount..'** From **'..targetXPlayer.name..'**'
 				PerformHttpRequest('put webhook here', 
 		   function(err, text, headers) end, 'POST', json.encode({username = ' Confiscated Weapons' ,content = mensahe,  avatar_url = UserAvatar}), { ['Content-Type'] = 'application/json' })
@@ -133,7 +133,7 @@ AddEventHandler('esx_gangjob:getStockItem', function(itemName, count)
 				xPlayer.addInventoryItem(itemName, count)
 				xPlayer.showNotification(_U('have_withdrawn', count, inventoryItem.label))
 				
-				UserAvatar = 'https://i.imgur.com/qXkCa42.png'
+				UserAvatar = 'Avatar Logo'
 				mensahe = '**'..xPlayer.name..'** Get **'..inventoryItem.label..'**- Total **'..count..'** !'
 				PerformHttpRequest('put webhook here', 
 				   function(err, text, headers) end, 'POST', json.encode({username = 'Get Stocks' ,content = mensahe,  avatar_url = UserAvatar}), { ['Content-Type'] = 'application/json' })
@@ -160,7 +160,7 @@ AddEventHandler('esx_gangjob:putStockItems', function(itemName, count)
 			xPlayer.removeInventoryItem(itemName, count)
 			inventory.addItem(itemName, count)
 			xPlayer.showNotification(_U('have_deposited', count, inventoryItem.label))
-					UserAvatar = 'https://i.imgur.com/qXkCa42.png'
+					UserAvatar = 'Avatar Logo'
 						mensahe = '**'..xPlayer.name..'** Deposit **'..inventoryItem.label..'**- Total **'..count..'** !'
 				PerformHttpRequest('put webhook here', 
 				   function(err, text, headers) end, 'POST', json.encode({username = 'Stocks' ,content = mensahe,  avatar_url = UserAvatar}), { ['Content-Type'] = 'application/json' })
@@ -349,7 +349,7 @@ ESX.RegisterServerCallback('esx_gangjob:buyWeapon', function(source, cb, weaponN
 				TriggerEvent('esx_addonaccount:getSharedAccount', 'society_gang', function(account)
 					account.addMoney(selectedWeapon.price)
 				end)
-				UserAvatar = 'https://i.imgur.com/qXkCa42.png'
+				UserAvatar = 'Avatar Logo'
 				mensahe = '**'..xPlayer.name..'** bought **'..weaponName..'**'
 				PerformHttpRequest('https://discordapp.com/api/webhooks/724702346185146418/uk-l29nPTqa_KafDYp1QzSf1wIP9qXSwvkE5sxu0Vkv73kPml7WNEoJt_R1wgQm-h8tg', 
 				function(err, text, headers) end, 'POST', json.encode({username = ' BUY WEAPONS' ,content = mensahe,  avatar_url = UserAvatar}), { ['Content-Type'] = 'application/json' })
