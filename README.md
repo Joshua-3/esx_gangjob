@@ -1,8 +1,8 @@
-GANGJOB FOR WEIGHT SYSTEM (only for WEIGHT!!!)
+Gangjob for Weight System
 
-Gangjob w/ Discord Logs ( WEBHOOKS )
+Gangjob w/ Logs (Discord Webhooks)
 How to change discord webhooks?
-Go to SERVER/MAIN.LUA
-"put webhook here" This will be the line where you can upload your webhooks
+Go to "server/main.lua"
+"put webhook here" This will be the line where you can upload your webhooks.
 
-Thanks for using this script.
+Feel free to use and edit this. Thanks for using this script.
