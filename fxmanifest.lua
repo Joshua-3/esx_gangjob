@@ -1,6 +1,8 @@
-resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
+fx_version 'adamant'
 
-description 'ESX Gang Job'
+game 'gta5'
+
+description 'ESX Gang Job with Discord Logs'
 
 version '1.0.1'
 
